@@ -1,1 +1,1 @@
-# graphQL-sandbox
+# My graphQL sandbox
