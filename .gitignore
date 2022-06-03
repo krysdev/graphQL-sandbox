@@ -1,5 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# security
+config.js
+
 # dependencies
 /node_modules
 server/node_modules
@@ -15,9 +18,12 @@ server/node_modules
 /build
 /.vscode
 
+
 # misc
-package.json
-package-lock.json
+
+_package.json
+_package-lock.json
+
 webpack.config.js
 .DS_Store
 .env.local
