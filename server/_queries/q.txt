@@ -1,0 +1,55 @@
+query X{
+  book(id: "1") {
+    name
+    author {
+      name
+      age
+      id
+    }
+  }
+}
+
+query XX{
+  author(id: "2") {
+    name
+    age
+    books{
+      name
+      genre
+    }
+  }
+}
+
+query BOOKS{
+  books{
+    name
+    author{
+      name
+    }
+  }
+}
+
+query AUTHORS{
+  authors{
+    name
+    books{
+      name
+    }
+  }
+}
+
+mutation{
+  addAuthor(name:"Terry", age: 44){
+    name
+    age
+  }
+}
+
+
+mutation {
+  addBook(name: "Book 1", genre: "Sci-fi", authorId: "629a186efe5d2c078e77807f") {
+    name
+    genre
+  }
+}
+
